@@ -8,6 +8,10 @@ import { useAuthContext } from "./context/AuthContext";
 // import cors from "cors";
 
 function App() {
+	useEffect(() => {
+		document.title = 'My Awesome React App';
+	}, []);
+
 	const { authUser } = useAuthContext();
 	return (
 		<div className='p-4 h-screen flex items-center justify-center'>
